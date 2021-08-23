@@ -18,9 +18,9 @@ h2 {
   padding: 0.5rem 1.5rem;
   cursor: pointer;
   border-radius: 4px;
-  background-color: #800040;
+  background-color: #a8155fb7;
   color: white;
-  border: 1px solid #800040;
+  border: 1px solid #a8155fb7;
   margin: 0 1rem;
 }
 
@@ -43,7 +43,8 @@ h2 {
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   padding: 1rem;
-  width: 20rem;
+  width: 100%;
+  margin: 2%;
 }
 
 .actions {

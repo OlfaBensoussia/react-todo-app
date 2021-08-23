@@ -1,22 +1,22 @@
 // import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import classes from './navbar.module.css';
+import classes from "./navbar.module.css";
 // import FavoritesContext from '../../store/favorites-context';
 
 function Navbar() {
-//   const favoritesCtx = useContext(FavoritesContext);
+  //   const favoritesCtx = useContext(FavoritesContext);
 
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>React Meetups</div>
+      <div className={classes.logo}>React Tasks</div>
       <nav>
         <ul>
           <li>
-            <Link to='/'>All Tasks</Link>
+            <Link to="/">All Tasks</Link>
           </li>
           <li>
-            <Link to='/favorites'>
+            <Link to="/favorites">
               My Favorites
               {/* <span className={classes.badge}>
                 {favoritesCtx.totalFavorites}
@@ -24,7 +24,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to='/new-task'>Add Task </Link>
+            <Link to="/new-task">Add Task </Link>
           </li>
         </ul>
       </nav>

@@ -2,6 +2,7 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 import NewTaskPage from "./pages/NewTask";
 import Navbar from "./components/layout/navbar";
 import AllTasks from "./pages/AllTasks";
+import EditTask from "./pages/EditTask";
 
 function App() {
   return (
@@ -15,9 +16,7 @@ function App() {
           <Route path="/new-task">
             <NewTaskPage />
           </Route>
-          <Route path="/favorites">
-            <div>Favorite Tasks</div>
-          </Route>
+          <Route path="/edit/:id" component={EditTask}></Route>
         </Switch>
       </BrowserRouter>
     </div>

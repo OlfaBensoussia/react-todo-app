@@ -5,21 +5,14 @@ import axios from "axios";
 function NewTaskPage() {
   const history = useHistory();
 
-  function addMeetupHandler(meetupData) {
-    axios.post("http://localhost:3800/candidates", meetupData).then(() => {
+  function addTaskHandler(taskData) {
+    axios.post("http://localhost:3800/candidates", taskData).then(() => {
       history.replace("/");
     });
-    console.log(meetupData);
+    console.log(taskData);
   }
 
-  return (
-    <AddTodoForm onAddMeetup={addMeetupHandler} />
-
-    // <section>
-    //   <h1>Add New Meetup</h1>
-    //   <AddTodoForm />
-    // </section>
-  );
+  return <AddTodoForm onAddTask={addTaskHandler} />;
 }
 
 export default NewTaskPage;

@@ -58,7 +58,7 @@ export default class EditTask extends Component {
 
     axios
       .put(
-        "http://localhost:4000/students/" + this.props.match.params.id,
+        "http://localhost:3800/candidates/" + this.props.match.params.id,
         studentObject
       )
       .then((res) => {
@@ -104,7 +104,7 @@ export default class EditTask extends Component {
           </Form.Group>
 
           <Button variant="danger" size="lg" block="block" type="submit">
-            Update Student
+            Update Task
           </Button>
         </Form>
       </div>

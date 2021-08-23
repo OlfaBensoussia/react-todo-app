@@ -18,7 +18,7 @@ function AddTodoForm(props) {
     };
     console.log(taskData);
 
-    props.onAddMeetup(taskData);
+    props.onAddTask(taskData);
   }
 
   return (
